@@ -1,0 +1,224 @@
+/* base */
+*{ padding: 0; margin: 0; }
+li{ list-style: none; }
+a{ text-decoration: none; }
+button{ cursor: pointer; }
+
+/* popup */
+.popup{
+   z-index: 5000; background-color: #fff;
+   padding-top: 5%; box-sizing: border-box;
+   position: absolute; margin: 100px 15%; 
+   width: 70%;
+   box-shadow: 0 1px 10px rgba(72, 72, 72, 0.8);
+}
+.popup h3{ font-size: 1.4rem; color: #9385bf; text-align: center;margin-bottom: 0.8rem; }
+.popup p{ font-size: 0.75rem; line-height: 1.125rem; text-align: center; }
+.popup span{ font-size: 0.75rem; color: #9385bf; font-weight: 500; }
+.popup p a{ font-size: 0.75rem; color: #838282; font-weight: 500; }
+.popup .btn ul{ display: flex; width: 100%; margin-top: 1rem; border-top: 1px solid #cecece; }
+.popup .btn li{ width: 50%; text-align: center; line-height: 2.625rem; }
+.popup li:first-child{ border-right: 1px solid #cecece; }
+.popup .btn li a{ display: block; width: 100%; height: 100%; font-size: 0.75rem; color: #828282; }
+
+
+/* main */
+main{ position: relative; top: 60px; width: 100%; height: 282px; margin-bottom: 100px; }
+main .swiper-container{ width: 100%; height: 100%; }
+main .swiper-slide{ height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center; }
+
+/* main - slide01 */
+main .swiper-slide.slide01{ 
+   position: relative; width: 100%; height: 100%;
+   background-image: url(../images/main/main_img/slide01.png);
+}
+main .swiper-slide.slide01 h3{ 
+   position: absolute; top: 63px; margin-left: 30px; margin-bottom: 25px;
+   color: #fff; font-size: 0.93rem; font-weight: 500;
+} 
+main .swiper-slide.slide01 h3 span{ color: #fff; font-size: 1.25rem; font-weight: 700; }
+main .swiper-slide.slide01 p{
+   position: absolute; top: 100px; left: 35px; text-align: center; line-height: 16px;
+   color: #fff; font-size: 0.75rem; font-weight: 500;
+}
+main .swiper-slide.slide01 img{ position: absolute; top: 38px; right: 23px; width: 117px; height: 200px; }
+
+/* main - slide02 */
+main .swiper-slide.slide02{ 
+   position: relative; width: 100%; height: 100%;
+   background-image: url(../images/main/main_img/slide02.png);
+   background-position: right center;
+}
+main .swiper-slide.slide02 img{ width: 85px; position: absolute; top: 17px; left: 21px; }
+main .swiper-slide.slide02 h3{ 
+   position: absolute; top: 55px; left: 110px;
+   color: #fff; font-weight: 400; font-size: 0.75rem; }
+main .swiper-slide.slide02 h2{ 
+   position: absolute; top: 80px; left: 110px;
+   color: #fff; font-weight: 700; font-size: 1.25rem; line-height: 1.875rem;
+}
+main .swiper-slide.slide02 p{
+   position: absolute; top: 165px; left: 113px; text-align: center;
+   color: #fff; font-size: 0.75rem; line-height: 1rem;
+}
+
+/* main - slide03 */
+main .swiper-slide.slide03{ 
+   position: relative; width: 100%; height: 100%;
+   background-image: url(../images/main/main_img/slide03.png);
+   background-position: right center;
+}
+main .swiper-slide.slide03 h2{
+   position: absolute; top: 30px; left: 22px;
+   font-family: 'RixYeoljeongdo_Regular'; font-weight: normal;
+   color: #fff; font-size: 1.4rem; line-height: 2rem;
+}
+main .swiper-slide.slide03 p{ position: absolute; top: 130px; left: 142px; color: #fff; font-size: 0.8rem; line-height: 1.7rem; }
+main .swiper-slide.slide03 img{ position: absolute; bottom: 0; left: 0; width: 128px; }
+
+/* main - pagination */
+main .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{ 
+   background-color: #fff; opacity: 1;
+   width: 2px; height: 13px; border-radius: 5px; margin-right: 5px;
+   position: relative; top: 5px;
+}
+main .swiper-pagination-bullet-active{ transform: rotate(40deg); }
+
+
+
+/* tabbox */
+.tabbox .btn{ width: 116px; height: 28px; border: 2px solid #9385bf; box-sizing: border-box; margin: 0 auto; margin-bottom: 30px; }
+.tabbox .btn ul{ display: flex; }
+.tabbox .btn li{ width: 50%; height: 100%; }
+.tabbox .btn a{ display: block; width: 100%; height: 100%; text-align: center; line-height: 26px; color: #9385bf; font-size: 0.8rem; font-weight: 500; }
+.tabbox .btn a.active{ background-color: #9385bf; color: #fff; }
+.tabbox .conwrap{ width: 100%; height: 150px; }
+.tabbox .conwrap .new ul, .tabbox .conwrap .best ul{ 
+   display: flex; justify-content: space-between;
+   padding: 0 20px; box-sizing: border-box;
+   width: 100%; height: 100%;
+}
+.tabbox .conwrap img{ width: 100px; }
+.tabbox .more_btn{ 
+   margin: 20px auto 38px; width: 95px; height: 25px; text-align: center; background-color: #c0c0c0; border-radius: 15px; 
+}
+.tabbox .more_btn a{ font-size: 0.75rem; color: #fff; line-height: 25px; }
+.tabbox .more_btn:active{ background-color: #9385bf; }
+
+
+
+/* award */
+.award{ position: relative; width: 100%; overflow: hidden; }
+.award > img{ width: 100%; }
+.award p{ position: absolute; top: 40px; right: 6%; font-family: 'Eulyoo1945-SemiBold'; font-size: 0.75rem; line-height: 1.25rem; color: #7b7b7b; text-align: left; }
+.award_slider{  position: absolute; bottom: 20px; width: 100%; padding-left: 30px; box-sizing: border-box; }
+.award_slider .swiper-slide{ position: relative; }
+.award_slider .swiper-slide img{ width: 100%; }
+
+
+
+/* bookclub */
+.bookclub{ position: relative; }
+.bookclub > img{ width: 233px; margin: 60px auto; }
+.bookclub .more_btn{ 
+   position: absolute; top: 6.25%; left: 120px;
+   width: 8.5rem; height: 23px; background-color: #c0c0c0; line-height: 20px; 
+   border-radius: 25px; text-align: center; margin-bottom: 100px; 
+}
+.bookclub .more_btn a{ color: #fff; font-size: 0.75rem; }
+.bookclub .more_btn:active{ background-color: #9385bf; }
+
+
+/* subscription */
+.subscription .littor{ display: inline-block; width: 100%; background-color: #9385bf; }
+.subscription .hanpyeon{ display: inline-block; width: 100%; background-color: #9385bf; margin-bottom: 35px;}
+.subscription .more_btn{ width: 25px; background-color: #9385bf;}
+
+
+
+/* 릿터 */
+.hanpyeon{ position: relative; top: -5px; }
+.littor .book{ float: left; width: 50%; position: relative; top: -2px; }
+.littor .text_wrap{ float: right; width: 50%; text-align: right; padding: 35px 17px 0 0; box-sizing: border-box; }
+.littor .text_wrap h3, .littor .text_wrap span{ position: relative; z-index: 30; color: #fff; font-size: 1.125rem; line-height: 1.5rem; font-weight: 700; }
+.littor .text_wrap .black{ display: inline-block; color: #000; margin-bottom: 10px; }
+.littor .text_wrap .bg{ color: #fff; background-color: #000; padding: 0 5px; }
+.littor .text_wrap p{ padding-top: 20px; box-sizing: border-box; color: #fff;  font-size: 0.75rem; line-height: 1.125rem; }
+.littor .text_wrap a{ position: relative; }
+.littor .text_wrap .more_btn{ position: absolute; top: -23px; left: -160px; }
+
+
+/* 한편 */
+.hanpyeon{ position: relative; top: -6px; }
+.hanpyeon .book{ float: right; width: 50%; position: relative; top: 2px; }
+.hanpyeon .text_wrap{ float: left; width: 50%; text-align: left; padding: 35px 0 0 17px; box-sizing: border-box; }
+.hanpyeon .text_wrap h3, .hanpyeon .text_wrap span{ position: relative; z-index: 30; color: #fff; font-size: 1.125rem; line-height: 1.5rem; font-weight: 700; }
+.hanpyeon .text_wrap .black{ display: inline-block; color: #000; margin-bottom: 10px; }
+.hanpyeon .text_wrap .bg{ color: #fff; background-color: #000; padding: 0 5px; }
+.hanpyeon .text_wrap p{ padding-top: 20px; box-sizing: border-box; color: #fff;  font-size: 0.75rem; line-height: 1.125rem; }
+.hanpyeon .text_wrap a{ position: relative; }
+.hanpyeon .text_wrap .more_btn{ position: absolute; top: -25px; left: 135px; }
+
+
+/* iphone plus */ 
+@media screen and (max-width: 414px){
+   .bookclub .more_btn{ position: absolute; left: 130px; }
+   .littor .text_wrap .more_btn{ position: absolute; top: -15px; left: -175px; }
+   .littor .square{ width: 120px; position: relative; top: -185px; left: 75px; }
+   .hanpyeon .text_wrap .more_btn{ position: absolute; top: -15px; left: 145px; }
+   .hanpyeon .square{ width: 125px; height: 30px; position: relative; top: -208px; }
+}
+
+
+/* eback */
+.eback{ position: relative; }
+.eback .phone{ float: left; width: 45%; margin-left: 30px; margin-bottom: 50px; }
+.eback p{ font-family: '국립박물관문화재단클래식M'; color: #000; }
+.eback .p01{ 
+   position: absolute; top: 40px; right: 70px;}
+.eback .p02{ position: absolute; top: 90px; right: 110px; font-size: 1.875rem; }
+.eback .p03{ position: absolute; top: 170px; right: 30px; text-align: right; font-size: 1.125rem; line-height: 1.6rem; }
+.eback .arrow{ width: 89px; position: absolute; top: 205px; right: 30px; }
+
+
+
+/* sns_board */
+.sns_board{ width: 100%; }
+.sns_board .sns-slider{ width: 100%; padding-right: 50px; box-sizing: border-box; }
+.sns-slider .swiper-slide a{ display: block; width: 100%; }
+.sns-slider .swiper-slide img{ width: 100%; }
+.sns_board input{
+   width: 136px; height: 23px; line-height: 23px;
+   border: none; display: block; margin: 20px auto 0;
+   font-size: 0.75rem; color: #fff; background-color: #c0c0c0;
+   border-radius: 25px; 
+}
+.sns_board input:active{ background-color: #9385bf; }
+
+
+
+/* brandstory */
+.brandstory{ 
+   position: relative; top: 1px;
+   display: inline-block; text-align: center;
+   margin-top: 70px; width: 100%; 
+   background-image: url(../images/main/brandstory/bg.png); background-repeat: no-repeat;  background-size: cover; background-position: center;
+}
+.brandstory h3{ margin: 30px 0 25px 0; font-family: 'Eulyoo1945-SemiBold'; font-size: 1.56rem; }
+.brandstory p{ margin-bottom: 25px; font-family: 'Eulyoo1945-Regular'; font-size: 0.93rem; line-height: 1.5rem; }
+
+/* iphone 5 & se */ 
+@media screen and (max-width: 320px){
+   .bookclub .more_btn{ position: absolute; top: 120px; left: 100px; }
+   .littor .text_wrap .more_btn{ position: absolute; top: -25px; left: -135px; }
+   .littor .square{ width: 100px; position: relative; top: -147px; left: 50px; }
+   .hanpyeon .text_wrap{ position: absolute; top: -10px; }
+   .hanpyeon .text_wrap .more_btn{ position: absolute; top: -15px; left: 110px; }
+   .hanpyeon .square{ width: 95px; height: 24px; position: relative; top: -162px; left: -3px;}
+   .hanpyeon .text_wrap p{ width: 105%; position: relative; left: -8px;}
+
+   .eback .p01{ position: absolute; top: 30px; left: 180px; }
+   .eback .p02{ position: absolute; top: 70px; right: 90px; }
+   .eback .p03{ position: absolute; top: 160px; right: 20px; }
+   .eback .arrow{ width: 75px; top: 190px; left: 220px; }
+}

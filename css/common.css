@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@font-face {
+   font-family: 'RixYeoljeongdo_Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+   font-weight: normal; font-style: normal;
+}
+@font-face {
+   font-family: 'Eulyoo1945-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+   font-weight: normal; font-style: normal;
+}
+@font-face {
+   font-family: 'Eulyoo1945-SemiBold';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+   font-weight: normal; font-style: normal;
+}
+@font-face {
+   font-family: '국립박물관문화재단클래식B';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: '국립박물관문화재단클래식M';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: '국립박물관문화재단클래식L';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+*{
+   padding: 0; margin: 0;
+   color: #666; font-size: 1.5rem;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+li{ list-style: none; }
+a{ text-decoration: none; }
+button{ cursor: pointer; }
+img{ display: block; }
+
+/* iphone plus */ 
+@media screen and (max-width: 414px){
+   *{ font-size: 18px; }
+}
+/* iphone 678 */ 
+@media screen and (max-width: 375px){
+   *{ font-size: 16px; }
+}
+/* iphone 5 & se */ 
+@media screen and (max-width: 320px){
+   *{ font-size: 14px; }
+}
+
+
+/* panel01 */
+.panel01{ position: fixed; top: 0; left: -75%; z-index: 3000; width: 75%; height: 100%; overflow-y: auto; background-color: #fff; transition: 0.6s; }
+.panel01.active{ left: 0; }
+.panel01 .nav{ display: flex; margin-top: 80px; justify-content: space-evenly; margin-bottom: 20px; }
+.panel01 .nav > li a{ color: #666; font-size: 0.75rem; }
+.panel01 .menu{ padding: 0 34px; box-sizing: border-box; }
+
+.panel01 .menu > li a{ font-weight: 500; line-height: 200%; }
+.panel01 .menu > li a.active{ color: #9385bf; }
+.panel01 .menu > li a.active .sub_menu{ display: block; }
+.panel01 .sub_menu{ display: none; width: 100%; overflow: hidden; }
+.panel01 .sub_menu li{ line-height: 2rem; }
+.panel01 .sub_menu a{ display: block; padding-left: 8%; font-size: 0.8125rem;}
+
+
+
+/* panel02 */
+.panel02{ position: fixed; top: -60%; left: 0%; z-index: 3000; width: 100%; height: 60%; overflow-y: auto; background-color: #fff; transition: 0.6s; }
+.panel02.active{ top: 0; }
+.panel02 .search{ position: relative; }
+.panel02 input{ 
+   width: 70%; height: 35px; border-radius: 25px; border: 2px solid #666; 
+   position: absolute; top: 80px; left: 0; right: 0; margin: 0 auto;
+   text-align: center;
+}
+.panel02 input::placeholder{ font-size: 0.875rem; color: #666; }
+.panel02 input:focus{ outline: 0;}
+.panel02 button{
+   width: 50px; height: 39px; color: #fff; background-color: #9385bf;
+   position: absolute; top: 80px; right: 55px; 
+   border: none; border-radius: 0 25px 25px 0;
+}
+.panel02 .recommend{ width: 100%; position: absolute; top: 120px; }
+.panel02 .recommend ul{ display: flex; justify-content: center; }
+.panel02 .recommend li{ margin-right: 5px; }
+.panel02 .recommend li a{ font-size: 0.75rem; }
+.panel02 .recommend li:after{ content: '|'; margin-left: 3px; font-size: 0.75rem; }
+.panel02 .recommend li:last-child:after{ content: ''; margin-right: 0; }
+.panel02 .recommend_book_wrap{ width: 100%; display: flex; margin: 7%; }
+.panel02 .recommend_book_wrap img{ width: 100%; }
+.panel02 .recommend_book_wrap a{ width: 30%; box-sizing: border-box; }
+.panel02 .recommend_book_wrap .text_wrap{ width: 70%; margin-left: 5%; }
+.panel02 .recommend .text_wrap p{ color: #999; font-size: 0.75rem; }
+
+/* black_bg */
+.black_bg01, .black_bg02{
+   display: none;  z-index: 2000;
+   position: fixed; top: 0; left: 0;
+   width: 100%; height: 100%;
+   background-color: rgba(0,0,0,0.7);
+}
+
+
+/* header */
+header{
+   display: flex; align-items: center; justify-content: space-between; 
+   position: fixed; top: 0; left: 0; z-index: 4000;
+   padding: 15px; box-sizing: border-box;
+   width: 100%; height: 60px; background-color: #fff;
+}
+header h1{ width: 50px; height: 44px; margin: 0 auto; }
+header h1 a{ display: block; width: 100%; height: 100%; }
+header h1 img{ width: 100%; }
+header .search_icon, #panel_icon a img{ width: 33px; height: 30px; }
+
+
+/* footer */
+footer{ width: 100%; background-color: #999; }
+.f_nav ul{ display: flex; justify-content: space-between; padding: 18px 32px; }
+.f_nav li a{ color: #fff; }
+.sns_icon{ float: left; width: 50%; padding: 0 0 20px 20px; box-sizing: border-box; }
+.sns_icon p{ color: #fff; font-size: 1.56rem; font-weight: 700; margin-bottom: 10px; }
+.sns_icon ul{ display: flex; }
+.sns_icon img{ width: 2.1rem; margin-right: 6px; }
+.info{ float: right; text-align: left; width: 50%; color: #fff; font-size: 0.75rem; line-height: 1.125rem; margin-top: 8px; }
+.last_nav{ width: 100%; }
+.last_nav ul{ width: 100%; display: flex; padding: 0 37px 17px 37px; box-sizing: border-box; }
+.last_nav li{ margin-right: 3px; }
+.last_nav li:after{ content: '|'; color: #e5e5e5; font-size: 0.75rem; margin-left: 3px; }
+.last_nav li:last-child:after{ content: ''; margin-right: 0; }
+.last_nav li a{ font-size: 0.75rem; color: #e5e5e5; }
+
+/* iphone 5 & se */ 
+ @media screen and (max-width: 320px){
+   *{ font-size: 14px; }
+   footer .last_nav ul{ padding: 0; padding-left: 25px; box-sizing: border-box;}
+   .last_nav li{ margin-right: 5px; margin-bottom: 20px; }
+   .last_nav li:after{ margin-left: 5px; }
+}
